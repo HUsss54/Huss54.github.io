@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #131416;
+
+}
+
+
+label {
+    position: relative;
+}
+
+
+label input {
+    font-size: 1rem;
+    background: transparent;
+    color: #f9f9f9;
+    border: 2px solid #7a7a7a;
+    border-radius: 5px;
+    padding: 1rem 1.2rem ;
+    width: 350px ;
+    transition: all 0.25
+
+}
+
+label input:focus {
+    border-color: #ff4754;
+}
+
+label .password-icon{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50% ;
+    transform: translateY(-50%);
+    width: 20px;
+    color: #f9f9f9;
+    transition: all 0.2s;
+    right: 4.8px;
+    margin-top: -1.35vh;
+    
+}
+
+
+label .password-icon .feather-eye-off {
+
+    display: none;
+}
+
+label .password-icon:hover {
+    cursor: pointer;
+    color: #ff4754;
+}
+
+
+
+.container {
+    width: 350px;
+
+}
+
+.pass {
+
+    color: #ff0000;
+    display: none;
+
+}
+
+.container :hover,
+.container input:focus{
+    background-color: rgb(0, 163, 35);
+    color: whitesmoke
+    
+}
